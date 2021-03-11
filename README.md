@@ -24,3 +24,13 @@
 - A Docker, Inc. no início era chamada de dotCloud que era uma empresa de PaaS (Platform as a Service) que utilizava a infraestrutura do Amazon Web Services (AWS) e introduziu o conceito de containers na hora de subir uma aplicação, dando origem ao Docker
 - O Docker  é uma coleção de tecnologias, sendo `Docker Engine` a principal que faz o intermédio entre o sistema operacional, `Docker Compose`, um jeito fácil de definir e orquestrar múltiplos containers; o `Docker Swarm`, uma ferramenta para colocar múltiplos docker engines para trabalharem juntos em um cluster; o `Docker Hub`, um repositório com mais de 250 mil imagens diferentes para os nossos containers; e a `Docker Machine`, uma ferramenta que nos permite gerenciar o Docker em um host virtual.
 - Quando a Docker, Inc. decidiu focar em manter o Docker tornou a tecnologia open source.
+
+**Aula 01.07 - Tecnologias do Docker**
+
+**Aula 01.08 - Instalando o Docker no Windows**
+- Existem duas possibilidades para instalar o Docker no Windows. Temos a principal, utilizando o `Docker for Windows` e a alternativa, utilizando o `Docker Toolbox`.
+- Os requisito para o Docker for Windows são:
+    - Arquitetura 64 bits
+    - Versão Pro, Enterprise ou Education.
+    - Virtualização habilitada
+- O `Docker Toolbox`  utiliza Oracle VirtualBox e  pode ser utilizados nos casos onde não possuimos os pré-requisitos
