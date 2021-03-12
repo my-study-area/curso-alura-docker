@@ -102,3 +102,20 @@ docker stop 8676d1ee5355 #para o container
 #inicia um container criado no modo interativo
 docker start -a -i 8676d1ee5355 
 ```
+
+**Aula 02.02 - Layered File System**
+```bash
+docker ps -a
+
+#remove o container pelo id
+docker rm 1ee1942d0e30
+
+#remove todos os containers
+docker container prune
+
+#lista as imagens de containers
+docker images
+
+#remove a imagem hello-world
+docker rmi hello-world
+```
