@@ -34,3 +34,39 @@
     - Versão Pro, Enterprise ou Education.
     - Virtualização habilitada
 - O `Docker Toolbox`  utiliza Oracle VirtualBox e  pode ser utilizados nos casos onde não possuimos os pré-requisitos
+
+**Aula 01.09 Preparando o ambiente: Instalando Docker no Windows**
+
+**Aula 01.10 Instalando o Docker no macOS**
+
+**Aula 01.11 Preparando o ambiente: Instalando Docker no MacOs**
+
+**Aula 01.12 Preparando o ambiente: Instalando Docker no Ubuntu**
+```bash
+# remove resões antigas
+sudo apt-get remove docker docker-engine docker.io
+
+# atualiza os pacotes
+sudo apt-get update
+
+# adiciona chave GPG oficial do repositório do Docker
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
+# adiciona o repositório do Docker às fontes do APT
+sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
+
+# atualiza os pacotes 
+sudo apt-get update
+
+# instala o docker
+sudo apt-get install docker-ce
+
+# verifica a versão do docker
+sudo docker version
+
+# adiciona o usuário atual ao grupo docker
+sudo usermod -aG docker $(whoami)
+```
