@@ -70,3 +70,8 @@ sudo docker version
 # adiciona o usuário atual ao grupo docker
 sudo usermod -aG docker $(whoami)
 ```
+**Aula 01.13 - Hello World**
+```bash
+docker run hello-world
+```
+
