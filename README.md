@@ -75,3 +75,8 @@ sudo usermod -aG docker $(whoami)
 docker run hello-world
 ```
 
+**Aula 01.14 - Consolidando seu conhecimento**
+
+**Aula 01.15 - Uma alternativa online**
+- [https://labs.play-with-docker.com/](https://labs.play-with-docker.com/)
+
