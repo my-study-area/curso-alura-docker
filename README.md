@@ -80,3 +80,25 @@ docker run hello-world
 **Aula 01.15 - Uma alternativa online**
 - [https://labs.play-with-docker.com/](https://labs.play-with-docker.com/)
 
+**Aula 01.16 - O que aprendemos?**
+
+## Módulo 02 - Trabalhando com imagens
+**Aula 02.01 - Comandos básicos com containers**
+```bash
+docker ps #lista os containers em execução
+
+docker ps -a #lista todos os containers
+
+docker run ubuntu #executa container ubuntu e para
+
+docker run ubuntu echo "Ola Mundo" #executa container, executa comando e para
+
+docker run -it ubuntu #executa container no modo interativo no terminal
+
+docker start 8676d1ee5355 #inicia um container criado
+
+docker stop 8676d1ee5355 #para o container
+
+#inicia um container criado no modo interativo
+docker start -a -i 8676d1ee5355 
+```
