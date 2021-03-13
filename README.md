@@ -128,3 +128,39 @@ docker rmi hello-world
 - Essas camadas podem ser reaproveitadas em outras imagens, acelerando assim o tempo de download.
 
 - As camadas de uma imagem são de leitura, somente os container são de leitura e escrita (os container criam uma camada acima das camadas da imagem)
+
+**Aula 02.05 - Praticando com o docker run**
+```bash
+#cria o container baseado na imagem dockersamples/static-site
+docker run dockersamples/static-site
+
+#para o container imediatamente
+docker stop -t 0 8bcbf14dcf27
+
+#cria o container desanexado do terminal
+docker run -d dockersamples/static-site
+
+#cria o container desanexado e mapeando uma porta automaticamente
+docker run -d -P dockersamples/static-site
+
+#exibe as porta mapeadas do container
+docker port 428e510c6ef0
+
+#cria o container desanexado, mapeando uma porta automaticamente
+#e com o nome meu-site
+docker run -d -P --name meu-site dockersamples/static-site
+
+#cria o container desanexado e mapeando uma porta manualmente
+docker run -d -p 12345:80  dockersamples/static-site
+
+#cria o container desanexado, mapeando uma porta automaticamente
+# e alterando a variável de ambienete AUTHOR
+docker run -d -P -e AUTHOR="Adriano"  dockersamples/static-site
+
+#para todos os container utilizando bash
+docker stop -t 0 $(docker ps -q)
+
+#para todos os container utilizando fish shell
+docker stop -t 0 (docker ps -q)
+```
+> `docker-machine ip` exibe o ip utilizado pelo Toolbox
