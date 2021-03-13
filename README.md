@@ -119,3 +119,12 @@ docker images
 #remove a imagem hello-world
 docker rmi hello-world
 ```
+
+**Aula 02.03 - Comandos do Docker**
+
+**Aula 02.04 - Sobre o Layered File System**
+- Toda imagem que baixamos é composta de uma ou mais camadas.
+
+- Essas camadas podem ser reaproveitadas em outras imagens, acelerando assim o tempo de download.
+
+- As camadas de uma imagem são de leitura, somente os container são de leitura e escrita (os container criam uma camada acima das camadas da imagem)
