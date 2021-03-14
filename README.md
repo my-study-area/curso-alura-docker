@@ -186,3 +186,6 @@ docker inspect 10f2473b3929
 # um volume de uma pasta do host associada à /var/www do container 
 docker run -it -v "/mnt/windows/adriano/temp/download/:/var/www" ubuntu
 ```
+
+**Aula 03.02 - Sobre volumes**
+- Muitas vezes removemos os containers após o uso. Volumes são usados para os dados que não devem ser removidos. É muito comum usar o container e apagá-lo após seu uso. Dessa forma também são removidos os dados desse container e aí entram os volumes que permitem salvar dados fora do container.
