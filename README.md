@@ -189,3 +189,22 @@ docker run -it -v "/mnt/windows/adriano/temp/download/:/var/www" ubuntu
 
 **Aula 03.02 - Sobre volumes**
 - Muitas vezes removemos os containers após o uso. Volumes são usados para os dados que não devem ser removidos. É muito comum usar o container e apagá-lo após seu uso. Dessa forma também são removidos os dados desse container e aí entram os volumes que permitem salvar dados fora do container.
+
+**Aula 03.03 - Lugar do volume**
+- Um volume fica salvo no Docker Host, ou seja, fica salvo no computador onde a Docker Engine está rodando.
+
+**Aula 03.04 - Rodando código em um container**
+```bash
+#cria um container mapeando uma pasta local associando ao /var/www,
+#mapeando para uso da porta local 8080, iniciando no diretório de 
+#trabalho /var/www e iniciando a aplicação com npm
+docker run -p 8080:3000 \
+  -v "/mnt/windows/adriano/documents/github/curso-alura-docker/volume-exemplo:/var/www" \
+  -w "/var/www" node npm start
+
+#com interpolação no bash
+docker run -p 8080:3000 -v "$(pwd):/var/www" -w "/var/www" node npm start
+
+#com interpolação no fish shell
+docker run -p 8080:3000 -v (pwd):/var/www -w "/var/www" node npm start
+```
