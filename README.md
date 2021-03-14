@@ -164,3 +164,25 @@ docker stop -t 0 $(docker ps -q)
 docker stop -t 0 (docker ps -q)
 ```
 > `docker-machine ip` exibe o ip utilizado pelo Toolbox
+
+**Aula 02.06 - Acessando portas do container**
+
+**Aula 02.07 - Para saber mais: Docker e DevOps**
+
+**Aula 02.08 - Consolidando seu conhecimento**
+
+**Aula 02.09 - O que aprendemos?**
+
+## Módulo 03 - Usando volumes
+**Aula 03.01 - Salvando dados com volumes**
+```bash
+#cria um container com volume
+docker run -v "/var/www" ubuntu
+
+#inspeciona as informações do container
+docker inspect 10f2473b3929
+
+# cria um container anexando ao meu terminal e cria
+# um volume de uma pasta do host associada à /var/www do container 
+docker run -it -v "/mnt/windows/adriano/temp/download/:/var/www" ubuntu
+```
