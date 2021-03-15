@@ -208,3 +208,8 @@ docker run -p 8080:3000 -v "$(pwd):/var/www" -w "/var/www" node npm start
 #com interpolação no fish shell
 docker run -p 8080:3000 -v (pwd):/var/www -w "/var/www" node npm start
 ```
+
+**Aula 03.05 - Montando volume**    
+Qual dos comandos abaixo configura o volume do diretório /var/www do container para C:\logs do Host?
+
+R: `docker run -v "C:\logs:/var/www" ubuntu`
