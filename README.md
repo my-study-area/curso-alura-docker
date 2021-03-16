@@ -213,3 +213,21 @@ docker run -p 8080:3000 -v (pwd):/var/www -w "/var/www" node npm start
 Qual dos comandos abaixo configura o volume do diretório /var/www do container para C:\logs do Host?
 
 R: `docker run -v "C:\logs:/var/www" ubuntu`
+
+**Aula 03.06 - Interpretando o Inspect**    
+Flavio é um programador com muita experiência no mundo Javascript, porém agora resolveu se aventurar no mundo do Docker. Ao pensar em como iria organizar os caminhos dos volumes em sua máquina e container, ele executou o comando docker inspect. Abaixo temos um pedaço da saída do comando docker inspect ID_DO_CONTAINER no terminal de Flavio, sobre a saída abaixo é verdade que:
+```bash
+"Mounts": [
+    {
+        "Type": "volume",
+        "Name": "5e1cbfd48d07284680552e56087c9d5196659600ccd6874bfa3831b51ddd0576",
+        "Source": "/home/Flavio/Desktop/volumes/caminho/_data",
+        "Destination": "/var/opt",
+        "Driver": "local",
+        "Mode": "",
+        "RW": true,
+        "Propagation": ""
+    }
+]
+```
+R: `"/var/opt"` pertence ao container e será escrito no caminho `"/home/Flavio/Desktop/volumes/caminho/_data"` em nossa máquina.
