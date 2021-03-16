@@ -241,7 +241,8 @@ R: `"/var/opt"` pertence ao container e será escrito no caminho `"/home/Flavio/
 - Como criar um ambiente de execução node.js
 
 
-**Aula 03.09 - Criando um Dockerfile**    
+## Módulo 04 - Construindo nossas próprias imagens
+**Aula 04.01 - Criando um Dockerfile**    
 ```Dockerfile
 FROM node:latest
 MAINTAINER "Adriano Avelino"
