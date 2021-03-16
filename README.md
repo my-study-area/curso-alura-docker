@@ -291,3 +291,31 @@ Lembrando também:
   - as imagens são read-only sempre
   - um container é uma instância de uma imagem
   - para guardar as alterações a docker engine cria uma nova layer em cima da última layer da imagem
+
+## Módulo 05 - Comunicação entre containers
+
+**Aula 05.01 - Networking no Docker**
+```bash
+docker run -it ubuntu
+
+#exibe o ip
+hostname -i
+
+#atualiza repositório e insta-la o ping
+apt-get update && apt-get install iputils-ping
+
+#testa a comunicação entre containers
+ping 172.17.0.3
+
+#cria a rede minha-rede usando o driver bridge
+docker network create --driver bridge minha-rede
+
+#cria container ubuntu1 na rede minha-rede
+docker run -it --name ubuntu1 --network minha-rede ubuntu
+
+#cria container ubuntu2 na rede minha-rede
+docker run -it --name ubuntu2 --network minha-rede ubuntu
+
+#testa comunicação por nome do container
+ping ubuntu2
+```
