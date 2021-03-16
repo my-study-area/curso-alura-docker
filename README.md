@@ -261,3 +261,17 @@ docker build -f Dockerfile -t adrianoavelino/node .
 #cria um container baseado na imagem adrianoavelino/node
 docker run -d -p 8080:3000 adrianoavelino/node
 ```
+
+**Aula 04.02 - Analisando o Dockerfile**
+
+**Aula 04.03 - Subindo a imagem do Docker Hub**
+```bash
+#faz login na conta do dockerhub
+docker login
+
+#envia a imagem pro dockerhub
+docker push adrianoavelino/node
+
+#baixa a imagem do dockerhub
+docker pull douglasq/node
+```
