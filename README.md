@@ -275,3 +275,19 @@ docker push adrianoavelino/node
 #baixa a imagem do dockerhub
 docker pull douglasq/node
 ```
+
+**Aula 04.04 - Novo Dockerfile**
+
+**Aula 04.05 - Consolidando seu conhecimento**
+
+**Aula 04.06 - O que aprendemos?**
+- A entender o papel do arquivo `DockerFile` para criar imagens.
+- O `Dockerfile` define os comandos para executar instalações complexas e com características específicas.
+- Vimos os principais comandos como `FROM, MAINTAINER, COPY, WORKDIR, RUN, EXPOSE e ENTRYPOINT`
+- A subir uma imagem criada através de um Dockerfile para o Docker Hub e disponibilizar para os desenvolvedores
+
+Lembrando também:
+
+  - as imagens são read-only sempre
+  - um container é uma instância de uma imagem
+  - para guardar as alterações a docker engine cria uma nova layer em cima da última layer da imagem
