@@ -231,3 +231,11 @@ Flavio é um programador com muita experiência no mundo Javascript, porém agor
 ]
 ```
 R: `"/var/opt"` pertence ao container e será escrito no caminho `"/home/Flavio/Desktop/volumes/caminho/_data"` em nossa máquina.
+
+**Aula 03.07 - Consolidando seu conhecimento**    
+
+**Aula 03.08 - O que aprendemos?**    
+- Que Container são voláteis, isso é, ao remover um, removemos os dados juntos
+- Para deixar os dados persistente devemos usar Volumes
+- Que volumes salvos não ficam no container e sim no Docker Host
+- Como criar um ambiente de execução node.js
