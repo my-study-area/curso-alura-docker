@@ -239,3 +239,24 @@ R: `"/var/opt"` pertence ao container e será escrito no caminho `"/home/Flavio/
 - Para deixar os dados persistente devemos usar Volumes
 - Que volumes salvos não ficam no container e sim no Docker Host
 - Como criar um ambiente de execução node.js
+
+
+**Aula 03.09 - Criando um Dockerfile**    
+```Dockerfile
+FROM node:latest
+MAINTAINER "Adriano Avelino"
+ENV PORT=3000
+COPY . /var/www
+WORKDIR /var/www
+RUN npm install
+ENTRYPOINT ["npm", "start"]
+EXPOSE $PORT
+```
+
+```bash
+#cria uma imagem baseada no Dockerfile
+docker build -f Dockerfile -t adrianoavelino/node .
+
+#cria um container baseado na imagem adrianoavelino/node
+docker run -d -p 8080:3000 adrianoavelino/node
+```
