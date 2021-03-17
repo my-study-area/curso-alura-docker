@@ -319,3 +319,9 @@ docker run -it --name ubuntu2 --network minha-rede ubuntu
 #testa comunicação por nome do container
 ping ubuntu2
 ```
+
+**Aula 05.02 - Rede Docker**
+- Por padrão, os containers ficam na mesma rede com o nome bridge.
+- Na rede padrão do Docker, só podemos realizar a comunicação utilizando IPs.
+- Com docker inspect ID_DO_CONTAINER podemos verificar a qual rede ele pertence.
+
