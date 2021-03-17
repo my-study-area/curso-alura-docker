@@ -325,3 +325,9 @@ ping ubuntu2
 - Na rede padrão do Docker, só podemos realizar a comunicação utilizando IPs.
 - Com docker inspect ID_DO_CONTAINER podemos verificar a qual rede ele pertence.
 
+**Aula 05.03 - Criando uma rede**    
+Com base no comando `docker network create --driver bridge local` podemos afirmar que:
+- A instrução create não é opcional.
+- Cria uma rede bridge chamada local.
+- Utiliza o driver bridge.
+- O parâmetro `--driver` indica qual driver será utilizado durante a criação da rede local.
