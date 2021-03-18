@@ -347,3 +347,10 @@ docker run -d -p 8080:3000 --network minha-rede  douglasq/alura-books:cap05
 ```
 - acesse [http://localhost:8080/seed/](http://localhost:8080/seed/) para salvar os livros no banco de dados
 - acesse [http://localhost:8080](http://localhost:8080/seed/) para visualizar os livros cadastrados
+
+**Aula 05.05 - Sobre o comando pull**
+
+**Aula 05.06 - Análise do comando**    
+Com base no comando `docker run -d --name meu-mongo --network minha-rede mongo` podemos afirmar:
+- Sobe um container na rede minha-rede.
+- Executa o container em modo detached.
