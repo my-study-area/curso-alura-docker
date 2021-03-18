@@ -354,3 +354,10 @@ docker run -d -p 8080:3000 --network minha-rede  douglasq/alura-books:cap05
 Com base no comando `docker run -d --name meu-mongo --network minha-rede mongo` podemos afirmar:
 - Sobe um container na rede minha-rede.
 - Executa o container em modo detached.
+
+**Aula 05.07 - Consolidando seu conhecimento**
+
+**Aula 05.08 - O que aprendemos?**    
+- Que imagens criadas pelo Docker acessam a mesma rede, porém apenas através de IP.
+- Ao criar uma rede é possível realizar a comunicação entre os containers através do seu nome.
+- Que durante a criação de uma rede precisamos indicar qual driver - utilizaremos, geralmente, o driver bridge.
