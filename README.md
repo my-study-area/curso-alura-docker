@@ -331,3 +331,19 @@ Com base no comando `docker network create --driver bridge local` podemos afirma
 - Cria uma rede bridge chamada local.
 - Utiliza o driver bridge.
 - O parâmetro `--driver` indica qual driver será utilizado durante a criação da rede local.
+
+**Aula 05.04 - Pegando dados de um banco**    
+```bash
+#cria um container da aplicação com a rede padrão
+docker run -d -p 8080:3000 douglasq/alura-books:cap05
+
+docker rm -f ID_DO_CONTAINER
+
+#cria um container  do banco de dados com a rede minha-rede
+docker run -d --name meu-mongo --network minha-rede mongo
+
+#cria um container  da aplicação com a rede minha-rede
+docker run -d -p 8080:3000 --network minha-rede  douglasq/alura-books:cap05
+```
+- acesse [http://localhost:8080/seed/](http://localhost:8080/seed/) para salvar os livros no banco de dados
+- acesse [http://localhost:8080](http://localhost:8080/seed/) para visualizar os livros cadastrados
