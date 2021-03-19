@@ -467,3 +467,27 @@ sudo curl -L https://github.com/docker/compose/releases/download/1.15.0/docker-c
 #adiciona permissão de execução
 sudo chmod +x /usr/local/bin/docker-compose
 ```
+
+**Aula 06.07 - Subindo os serviços**    
+```bash
+#constrói os containers
+sudo docker-compose build
+
+#inicia a aplicação
+docker-compose up
+
+#para a aplicação
+docker-compose down
+
+#inicia a aplicação em modo detach
+docker-compose up -d
+
+#exibe as informações do container como porta, nome e estado
+docker-compose ps
+
+#exemplo de ping de container pelo nome do container
+docker exec -it alura-books-1 ping alura-books-2
+
+#exemplo de ping de container pelo nome do serviço
+docker exec -it alura-books-1 ping node2
+```
