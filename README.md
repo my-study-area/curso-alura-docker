@@ -452,3 +452,9 @@ networks:
     production-network:
         driver: bridge
 ```
+
+**Aula 06.05 - Responsabilidades do Docker Compose**    
+- Executar o build de vários containers.
+- Desligar os containers de maneira coordenada.
+- Manipular diversos containers.
+- Criar nova rede em qual os containers podem participar.
