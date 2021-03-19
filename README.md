@@ -366,3 +366,22 @@ Com base no comando `docker run -d --name meu-mongo --network minha-rede mongo` 
 **Aula 06.01 - Entendendo o Docker Compose**    
 - `Docker Compose` é uma das tecnologias aliadas do Docker, feita para nos auxiliar a orquestrar  múltiplos containers, ao invés de subir todos esses containers na mão
 - Ele funciona a partir de um arquivo de texto `YAML` (extensão .yml)
+
+**Aula 06.02 - Entendendo a aplicação**    
+
+**Aula 06.03 - Análise de um DockerFile**    
+```docker
+FROM nginx:latest
+MAINTAINER Douglas Quintanilha
+COPY /public /var/www/public
+COPY /docker/config/nginx.conf /etc/nginx/nginx.conf
+EXPOSE 80 443
+ENTRYPOINT ["nginx"]
+CMD ["-g", "daemon off;"]
+```
+Com base no arquivo acima podemos verificar:
+- Utilizamos a última versão disponível da imagem do nginx como base
+- Copiamos o conteúdo da pasta public, que contém os arquivos estáticos, e um arquivo de configuração do NGINX para dentro do container.
+- É executado o comando nginx, passando os parâmetros extras -g e daemon off.
+- A  porta 80 e 443 estão abertas
+
