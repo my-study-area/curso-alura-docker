@@ -551,3 +551,10 @@ Segue a lista com os principais comandos utilizados durante o curso:
   - `docker-compose build` - Realiza o build dos serviços relacionados ao arquivo docker-compose.yml, assim como verifica a sua sintaxe.
   - `docker-compose up` - Sobe todos os containers relacionados ao docker-compose, desde que o build já tenha sido executado.
   - `docker-compose down` - Para todos os serviços em execução que estejam relacionados ao arquivo docker-compose.yml.
+
+**Aula 06.12 - O que aprendemos?**    
+- A necessidade de usar o Docker Compose
+- Configurar o build de vários containers através do docker-compose.yml
+- subir e parar os containers de maneira coordenada com Docker Compose
+
+**Aula 06.13 - Conclusão**    
