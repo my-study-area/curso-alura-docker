@@ -458,3 +458,12 @@ networks:
 - Desligar os containers de maneira coordenada.
 - Manipular diversos containers.
 - Criar nova rede em qual os containers podem participar.
+
+**Aula 06.06 - Instalando o Docker Compose no Linux**    
+```bash
+#baixa a versão mais nova do docker-compose
+sudo curl -L https://github.com/docker/compose/releases/download/1.15.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+
+#adiciona permissão de execução
+sudo chmod +x /usr/local/bin/docker-compose
+```
