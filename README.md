@@ -491,3 +491,15 @@ docker exec -it alura-books-1 ping alura-books-2
 #exemplo de ping de container pelo nome do serviço
 docker exec -it alura-books-1 ping node2
 ```
+
+**Aula 06.08 - Reinicializando containers**    
+```bash
+#para e remove os containers, redes, imagems e volumes
+docker-compose down
+
+#cria e inicia o container
+docker-compose up
+
+#restarta os serviços
+docker-compose restart
+```
