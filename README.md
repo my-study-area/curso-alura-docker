@@ -385,3 +385,70 @@ Com base no arquivo acima podemos verificar:
 - É executado o comando nginx, passando os parâmetros extras -g e daemon off.
 - A  porta 80 e 443 estão abertas
 
+**Aula 06.04 - Criando o docker-compose.yml**    
+```yml
+version: '3'
+services:
+    nginx:
+        build:
+            dockerfile: ./docker/nginx.dockerfile
+            context: .
+        image: douglasq/nginx
+        container_name: nginx
+        ports:
+            - "80:80"
+        networks: 
+            - production-network
+        depends_on: 
+            - "node1"
+            - "node2"
+            - "node3"
+
+    mongodb:
+        image: mongo
+        networks: 
+            - production-network
+
+    node1:
+        build:
+            dockerfile: ./docker/alura-books.dockerfile
+            context: .
+        image: douglasq/alura-books
+        container_name: alura-books-1
+        ports:
+            - "3000"
+        networks: 
+            - production-network
+        depends_on:
+            - "mongodb"
+
+    node2:
+        build:
+            dockerfile: ./docker/alura-books.dockerfile
+            context: .
+        image: douglasq/alura-books
+        container_name: alura-books-2
+        ports:
+            - "3000"
+        networks: 
+            - production-network
+        depends_on:
+            - "mongodb"
+
+    node3:
+        build:
+            dockerfile: ./docker/alura-books.dockerfile
+            context: .
+        image: douglasq/alura-books
+        container_name: alura-books-3
+        ports:
+            - "3000"
+        networks: 
+            - production-network
+        depends_on:
+            - "mongodb"
+
+networks: 
+    production-network:
+        driver: bridge
+```
