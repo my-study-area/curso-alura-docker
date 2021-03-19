@@ -361,3 +361,8 @@ Com base no comando `docker run -d --name meu-mongo --network minha-rede mongo` 
 - Que imagens criadas pelo Docker acessam a mesma rede, porém apenas através de IP.
 - Ao criar uma rede é possível realizar a comunicação entre os containers através do seu nome.
 - Que durante a criação de uma rede precisamos indicar qual driver - utilizaremos, geralmente, o driver bridge.
+
+## Módulo 06 - Trabalhando com o Docker Compose
+**Aula 06.01 - Entendendo o Docker Compose**    
+- `Docker Compose` é uma das tecnologias aliadas do Docker, feita para nos auxiliar a orquestrar  múltiplos containers, ao invés de subir todos esses containers na mão
+- Ele funciona a partir de um arquivo de texto `YAML` (extensão .yml)
