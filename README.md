@@ -569,3 +569,47 @@ Segue a lista com os principais comandos utilizados durante o curso:
 - subir e parar os containers de maneira coordenada com Docker Compose
 
 **Aula 06.13 - Conclusão**    
+
+## Executando o projeto final
+```bash
+# entra no diretório com o projeto final
+cd alura-docker-cap06
+
+# constrói as imagens
+docker-compose build
+
+# inicia os container
+docker-compose up -d
+
+# verifica os status e demais informações
+docker-compose ps
+
+# alimenta o banco com os dados inciais
+# Obs: também é possível acessar http://localhost/seed no navegador
+curl http://localhost/seed -v
+```
+Acesse [http://localhost/](http://localhost/) no seu navegador para consultar os livros cadastrados anteriormente.
+![Print da aplicação sendo executada no navegador](./print.png)
+
+Outros comandos:
+```bash
+# mongo
+
+# acessa o terminal do container mongo
+docker-compose exec mongodb bash
+
+# conecta no mongo
+mongo
+
+# exibe os bancos de dados existentes
+show dbs
+
+# seleciona o banco de dados alura-books
+use alura-books
+
+# mostra as collections
+show collections
+
+# exibe as informações da collection books
+db.getCollectionInfos({ name: "books" });
+```
