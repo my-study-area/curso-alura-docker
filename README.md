@@ -612,4 +612,7 @@ show collections
 
 # exibe as informações da collection books
 db.getCollectionInfos({ name: "books" });
+
+# lista os dados da collection books
+db.books.find()
 ```
