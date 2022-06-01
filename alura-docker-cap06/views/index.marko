@@ -15,10 +15,10 @@
 	</nav>
 	<div class="container page-wrap">
 		<div class="row">	
-			<for(book in data.books)>
+			<for|book| of=data.books>
 				<div class="col-md-3 col-sm-6 hero-feature text-center">
 				<div class="thumbnail">
-					<img src="img/${book.cover}" alt="">
+					<img src=`img/${book.cover}` alt="">
 					<div class="caption">
 						<h3>${book.name}</h3>
 						<p>${book.description}</p>
