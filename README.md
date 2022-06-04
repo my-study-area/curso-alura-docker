@@ -14,6 +14,12 @@
 Anotações do Curso de Docker: Criando containers sem dor de cabeça da Alura
 
 > Para acessar os comandos para inciar o projeto final, acesse [Executando o projeto final](#executando-o-projeto-final)
+
+## Atualizações
+- [Atualiza a sintaxe das views da aplicação que utilizam marko](https://github.com/my-study-area/curso-alura-docker/commit/a82f85220a41d275343da7ebda409b697a20b8d5)
+- [Atualiza as dependência da aplicação](https://github.com/my-study-area/curso-alura-docker/commit/1b3a25071bd546fed3ca781d3e59644f46b08aad)
+- [Remove a propriedade ports dos services com a imagem alura-books para que não seja acessada no localhost](https://github.com/my-study-area/curso-alura-docker/commit/3cab6596a28a290420721ec0bdfd0485536fce7a)
+
 ## Módulo 01 - Introdução ao Docker
 **Aula 01.01 - Introdução**
 
