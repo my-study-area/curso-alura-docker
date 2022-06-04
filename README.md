@@ -9,8 +9,11 @@
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/my-study-area/curso-alura-docker">
     </a>
 </p>
-Anotações do Curso de Docker: Criando containers sem dor de cabeça
 
+![Print do terminal iniciando a aplicação com o comando docker-compose up -d](./print-terminal.png)
+Anotações do Curso de Docker: Criando containers sem dor de cabeça da Alura
+
+> Para acessar os comandos para inciar o projeto final, acesse [Executando o projeto final](#executando-o-projeto-final)
 ## Módulo 01 - Introdução ao Docker
 **Aula 01.01 - Introdução**
 
