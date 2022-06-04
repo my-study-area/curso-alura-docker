@@ -575,8 +575,11 @@ Segue a lista com os principais comandos utilizados durante o curso:
 
 ## Executando o projeto final
 ```bash
+# clona o projeto
+git clone https://github.com/my-study-area/curso-alura-docker
+
 # entra no diretório com o projeto final
-cd alura-docker-cap06
+cd curso-alura-docker/alura-docker-cap06
 
 # constrói as imagens
 docker-compose build
