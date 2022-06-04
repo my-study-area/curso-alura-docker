@@ -597,6 +597,8 @@ curl http://localhost/seed -v
 Acesse [http://localhost/](http://localhost/) no seu navegador para consultar os livros cadastrados anteriormente.
 ![Print da aplicação sendo executada no navegador](./print.png)
 
+> A execução dos comandos está disponível no Youtube, no canal [Diário de um dev](https://www.youtube.com/watch?v=keTWO66VfVs)
+
 Outros comandos:
 ```bash
 # mongo
